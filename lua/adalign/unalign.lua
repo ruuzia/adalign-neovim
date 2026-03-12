@@ -17,7 +17,8 @@ function M.preview(ctx, preview_ns, preview_buf)
 
     for i, l in ipairs(lines) do
         for start_idx, end_idx in l:gmatch("%S()  +()") do
-            api.nvim_buf_add_highlight(buffer, preview_ns, 'AdalignDeleteSpace', startline + i-1, start_idx-1, end_idx-1)
+            local line = startline + i - 1
+            vim.hl.range(buffer, preview_ns, 'AdalignDeleteSpace', { line, start_idx-1 }, { line, end_idx-1 })
         end
     end
     return 1
