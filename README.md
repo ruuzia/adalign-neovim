@@ -15,7 +15,7 @@ Adalign uses the new Neovim 0.8 user command preview functionality to support pr
 
 ### Usage
 ```vim
-:help adalign-neovim
+:help adalign
 ```
 ```
 Align                                                                 *:Align*

@@ -1,5 +1,5 @@
 ==============================================================================
-INTRODUCTION                                                    *nvim-adalign*
+INTRODUCTION                                                         *adalign*
 
 Align lines with whitespace based on vim regexp.
 For awesome preview functionality, Adalign needs Neovim 0.8+. Specifically
