@@ -56,7 +56,7 @@ function M.preview(ctx, preview_ns, preview_buf)
 
             -- highlight matches
             local is_leading = matches.columns[i] == targetcol
-            if matches.indices[i] then
+            if matches.indices[i] and matches.indices[i] < matches.ends[i] then
                 local chars_inserted = inserts[i] and #inserts[i].text or 0
                 vim.hl.range(
                     buffer,
