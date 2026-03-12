@@ -1,4 +1,4 @@
-# Adalign Neovim
+# Nvim Adalign
 
 ![Adalign Demo](demo.gif)
 
@@ -10,7 +10,7 @@ Adalign uses the new Neovim 0.8 user command preview functionality to support pr
 
 ### Installation
 ```lua
-'ruuzia/adalign-neovim'
+'ruuzia/nvim-adalign'
 ```
 
 ### Usage
